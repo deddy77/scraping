@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 
 
-url = "https://codeavecjonathan.com/scraping/recette_js"
+#url = 
 
 HEADERS = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0"} 
 
@@ -19,7 +19,7 @@ response.encoding = "ISO-8859-1"
 
 
 if response.status_code == 200:
-    print("Tout s'est bien passé")
+    print("Everything went well")
     html = response.text
     #print(html)
     f = open("recette.html", "w")
@@ -27,7 +27,8 @@ if response.status_code == 200:
     f.close()
 
     soup = BeautifulSoup(html, "html5lib")
-
+# your soup scrap went here
+    
     titre = soup.find("h1").text
     print(titre)
     description = get_text_if_not_none(soup.find("p", class_="description"))

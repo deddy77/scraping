@@ -3,8 +3,7 @@ from bs4 import BeautifulSoup
 
 
 
-
-#url = "https://codeavecjonathan.com/scraping/techsport"
+#url
 
 
 url = "https://ww.amazon.com/"

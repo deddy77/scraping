@@ -5,13 +5,9 @@ from datetime import datetime
 import json
 from openai import OpenAI
 
-SBR_WS_CDP = 'wss://brd-customer-hl_4640318e-zone-scraping_browser1:p7xqz5f6ac0u@brd.superproxy.io:9222'
+SBR_WS_CDP = 'your scraping browser websocket url here'
 
 URLS = [
-    "https://codeavecjonathan.com/scraping/techsport/",
-    "https://codeavecjonathan.com/scraping/techsport/index.html?id=tech-Solar-sync",
-    "https://codeavecjonathan.com/scraping/techsport/index.html?id=fitness-pro",
-    "https://codeavecjonathan.com/scraping/techsport/index.html?id=tech-wizard",
 ]
 
 # Chemin du fichier JSON pour le stockage des données
@@ -23,7 +19,7 @@ DATE_TODAY_STR = DATE_TODAY.strftime("%Y-%m-%d")
 
 
 # Clé API OPENAI
-OPENAI_KEY = "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"
+OPENAI_KEY = "your_openai_key_here"
 
 # Initialiser le client OpenAI
 openai_client = OpenAI(api_key=OPENAI_KEY)
